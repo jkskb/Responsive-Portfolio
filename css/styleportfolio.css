@@ -1,20 +1,12 @@
-html {
-    height: 100%;
-    margin:0;
-    padding: 0;
-}
-
 body {
     height: 100%;
     max-width: 960px;
     margin: auto;
-    padding:0;
     background-color: #eae5e5;
     width: 60%;
 }
 
 .main-wrapper {
-    min-height: 100%;
     position: relative;
 }
 
@@ -78,7 +70,6 @@ li {
 img {
     width: 200px;
     height: 200px;
-    border: 0px;
     margin-top: 30px;
 }
 
@@ -89,14 +80,13 @@ img {
     text-align: center;
     border: none;
     padding: 12px 24px;
-    margin-bottom: 20px;
 }
 
 .container .btn:hover {
     background-color: #4da2a5;
 }
 
-.column {
+.column {  
     float: left;
     width: 33.33%;
 }
@@ -107,26 +97,13 @@ img {
     clear: both;
 }
 
-.column1 {
-    padding-left: 10px;
-}
-
-.column2 {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.column3 {
-    padding-right: 10px;
-}
-
 .footer {
     height: 50px;
     width: 100%;
     background: #E83556;
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    margin-top: 20px;
 }
 
 .footer p {
@@ -136,71 +113,4 @@ img {
     font-size: 8px;
     font-weight: bold;
     padding-top: 20px;
-}
-
-@media only screen and (min-width: 980px) {
-    body { 
-        margin: 0 auto; 
-    }
-}
-
-@media only screen and (max-width: 979px) and (min-width: 768px) {
-    .container {
-        max-width: 700px;
-    }
-    body { 
-        margin: 0 auto; 
-    }
-    .main-wrapper {
-        max-width: 100%
-    }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 640px) {
-    .container {
-        max-width: 600px;
-    }
-    body { 
-        margin: 0 auto; 
-    }
-    .main-wrapper {
-        max-width: 100%
-    }  
-    img {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 639px) {
-    .container {
-        max-width: 500px;
-    }
-    .main-wrapper {
-        max-width: 100%;
-        margin-right: 15px;
-        margin-left: 15px;
-    } 
-    nav {
-        float: none;
-        text-align: center;
-        margin: auto;
-    }
-    nav a {
-        width: 33.3%;
-        float: left;
-        padding: 15px 0px 15px 0px;
-        margin: 0px;
-    }
-    body {
-        font-size: 16px;
-        line-height: 30px;
-    }
-    img {
-        float: none;
-        width: 100%;
-        height: auto;
-    }
-    footer {
-        padding: 20px 0;
-    }
 }
